@@ -5,6 +5,7 @@ import Lodging from './components/Lodging';
 import Attractions from './components/Attractions';
 import Restaurants from './components/Restaurants';
 
+
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="attractions" element={<Attractions />} />
 
 
+
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
@@ -28,31 +30,22 @@ export default function App() {
     </div>
   );
 }
-const navStyle = {textDecoration: "none", color: "blue"};
+const navStyle = {textDecoration: "none", color: "white"};
 function Layout() {
   return (
     <div>
       {/* A "layout route" is a good place to put markup you want to
           share across all the pages on your site, like navigation. */}
-      <nav>
+      {/* <nav>
         <ul>
           <li>
             <Link style={navStyle} to="/">Home</Link>
           </li>
           <li>
-            <Link style={navStyle} to="/lodging">Lodging</Link>
-          </li>
-          <li>
-            <Link style={navStyle} to="/restaurants">Restaurants</Link>
-          </li>
-          <li>
-            <Link style={navStyle} to="/attractions">Attractions</Link>
-          </li>
-          <li>
-            <Link style={navStyle} to="/nothing-here">Nothing Here</Link>
+            <Link style={navStyle} to="/location">TBD</Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
       <hr />
 
@@ -66,12 +59,10 @@ function Layout() {
 
 function NoMatch() {
   return (
-    <div>
-      <h2>Nothing to see here!</h2>
-      <p>
-        <Link to="/">Go to the home page</Link>
-      </p>
-    </div>
+      <div className='content'>
+        <h2>Congratulations. You win $1,000,000!</h2>
+        <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click here to claim your prize!</a> </p>
+      </div>
   );
 }
 
