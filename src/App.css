@@ -1,5 +1,4 @@
 * {
-  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
   background-color: rgb(18, 18, 24);
@@ -9,7 +8,17 @@
   color: whitesmoke;
 }
 
-
+nav {
+  position: absolute;
+  padding: 20px;
+  z-index: 1;
+  background-color: transparent;
+}
+.rocket {
+  width: 75%;
+  height: 75%;
+  background-color: transparent;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -23,39 +32,4 @@ li {
   text-align: center;
   padding: 14px 16px;
   transition: text-shadow 0.3s ease-in-out;
-}
-
-li:hover {
-  animation: glitch 0.2s;
-}
-
-
-@keyframes glitch {
-  0% {
-    text-shadow: 
-    -1px -1px 0px rgba(255, 255, 255, 0.7),
-    1px 1px 0px rgba(255, 255, 255, 0.7),
-    -3px -3px 0px rgba(255, 0, 0, 0.7),
-    3px 3px 0px rgba(255, 0, 0, 0.7),
-    -5px -5px 0px rgba(0, 255, 0, 0.7),
-    5px 5px 0px rgba(0, 255, 0, 0.7),
-    -7px -7px 0px rgba(0, 0, 255, 0.7),
-    7px 7px 0px rgba(0, 0, 255, 0.7);
-  
-  }
-  50% {
-    text-shadow: none;
-  }
-  100% {
-    text-shadow: 
-    -1px -1px 0px rgba(255, 255, 255, 0.7),
-    1px 1px 0px rgba(255, 255, 255, 0.7),
-    -3px -3px 0px rgba(255, 0, 0, 0.7),
-    3px 3px 0px rgba(255, 0, 0, 0.7),
-    -5px -5px 0px rgba(0, 255, 0, 0.7),
-    5px 5px 0px rgba(0, 255, 0, 0.7),
-    -7px -7px 0px rgba(0, 0, 255, 0.7),
-    7px 7px 0px rgba(0, 0, 255, 0.7);
-  
-  }
 }

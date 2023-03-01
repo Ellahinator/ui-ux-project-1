@@ -29,7 +29,11 @@ video {
 }
 
 img {
-    margin-left: 50px;
+    border-radius: 5px;
+    height: 400px;
+    width: 285px;
+    object-fit: cover;
+    margin: 20px 0px;
 }
 
 /* p {
@@ -39,7 +43,7 @@ img {
     font-weight: 300;
 } */
 
-.header h1:hover, h3:hover{
+.header h1:hover, h3:hover, li:hover, nav:hover{
     animation: glitch 0.2s;
     /* color: rgb(184, 255, 234); */
 }

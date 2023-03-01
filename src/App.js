@@ -1,11 +1,7 @@
 import './App.css';
 
 import Homepage from './components/Homepage';
-import Lodging from './components/Lodging';
-import Attractions from './components/Attractions';
-import Restaurants from './components/Restaurants';
-
-
+import Explore from './components/Explore';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 
@@ -15,9 +11,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
-          <Route path="lodging" element={<Lodging />} />
+          <Route path="explore" element={<Explore />} />
+          {/* <Route path="lodging" element={<Lodging />} />
           <Route path="restaurants" element={<Restaurants />} />
-          <Route path="attractions" element={<Attractions />} />
+          <Route path="attractions" element={<Attractions />} /> */}
 
 
 
@@ -34,24 +31,9 @@ const navStyle = {textDecoration: "none", color: "white"};
 function Layout() {
   return (
     <div>
-      {/* A "layout route" is a good place to put markup you want to
-          share across all the pages on your site, like navigation. */}
-      {/* <nav>
-        <ul>
-          <li>
-            <Link style={navStyle} to="/">Home</Link>
-          </li>
-          <li>
-            <Link style={navStyle} to="/location">TBD</Link>
-          </li>
-        </ul>
-      </nav> */}
-
-      <hr />
-
-      {/* An <Outlet> renders whatever child route is currently active,
-          so you can think about this <Outlet> as a placeholder for
-          the child routes we defined above. */}
+      <nav>
+      <Link to="/" style={navStyle}>Home</Link>
+      </nav>
       <Outlet />
     </div>
   );
