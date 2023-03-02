@@ -45,7 +45,6 @@ img {
 
 .header h1:hover, h3:hover, li:hover, nav:hover{
     animation: glitch 0.2s;
-    /* color: rgb(184, 255, 234); */
 }
 
 .header h1, h3{
