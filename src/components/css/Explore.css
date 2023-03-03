@@ -1,5 +1,16 @@
-.main {
-    margin-top: 100px;
+
+body {
+    background-color: rgb(18,18,24);
+}
+
+.explore-vid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: -1;
+    filter: saturate(0.5);
 }
 
 .explore-header {
@@ -10,6 +21,8 @@
     font-family: "Nexa", sans-serif;
     font-weight: 900;
     z-index: 1;
+    color: #ffb9ea;
+    padding-top: 6%;
   }
 
 .box {
@@ -30,7 +43,9 @@
     width: 100%;
     height: auto;
     border: 2px solid transparent;
-    transition: border-color 0.3s ease-out;
+    transition: 0.3s ease-out;
+    opacity: 0.9;
+    border-color: rgba(255, 185, 234, 0.3);
   }
   
   .box > div p {
@@ -41,7 +56,7 @@
     margin: 0;
     padding: 10px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* add semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.4); /* add semi-transparent background */
     transition: background-color 0.3s ease-out;
     font-size: 1.3rem;
     border-radius: 5px;
@@ -53,11 +68,46 @@
   }
   
   .box > div:hover img {
-    border-color: #ffb9ea; /* change border color on hover */
+    border-color: rgba(255, 185, 234, 0.8); /* change border color on hover */
+    opacity: 1;
   }
   
   .box > div:hover p {
     background-color: rgba(0, 0, 0, 0.8); /* darken background color on hover */
   }
     
+  
+  .explore-header:hover {
+    animation: glitch 0.2s;
+  }
+
+  @keyframes glitch {
+    0% {
+      text-shadow: 
+      -1px -1px 0px rgba(255, 255, 255, 0.7),
+      1px 1px 0px rgba(255, 255, 255, 0.7),
+      -3px -3px 0px rgba(255, 0, 0, 0.7),
+      3px 3px 0px rgba(255, 0, 0, 0.7),
+      -5px -5px 0px rgba(0, 255, 0, 0.7),
+      5px 5px 0px rgba(0, 255, 0, 0.7),
+      -7px -7px 0px rgba(0, 0, 255, 0.7),
+      7px 7px 0px rgba(0, 0, 255, 0.7);
+    
+    }
+    50% {
+      text-shadow: none;
+    }
+    100% {
+      text-shadow: 
+      -1px -1px 0px rgba(255, 255, 255, 0.7),
+      1px 1px 0px rgba(255, 255, 255, 0.7),
+      -3px -3px 0px rgba(255, 0, 0, 0.7),
+      3px 3px 0px rgba(255, 0, 0, 0.7),
+      -5px -5px 0px rgba(0, 255, 0, 0.7),
+      5px 5px 0px rgba(0, 255, 0, 0.7),
+      -7px -7px 0px rgba(0, 0, 255, 0.7),
+      7px 7px 0px rgba(0, 0, 255, 0.7);
+    
+    }
+  }
   

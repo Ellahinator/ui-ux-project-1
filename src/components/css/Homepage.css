@@ -1,7 +1,7 @@
 
 .content {
     position: relative;
-    /* background-color: rgb(18, 18, 24); */
+    background-color: rgb(18, 18, 24);
     width: 100%;
     height: 100%;
     top: 0;
@@ -21,7 +21,7 @@
     background-color: transparent;
 }
 
-video {
+.homepage-vid {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -57,33 +57,32 @@ img {
 
 
   
-  @keyframes glitch {
-    0% {
-      text-shadow: 
-      -1px -1px 0px rgba(255, 255, 255, 0.7),
-      1px 1px 0px rgba(255, 255, 255, 0.7),
-      -3px -3px 0px rgba(255, 0, 0, 0.7),
-      3px 3px 0px rgba(255, 0, 0, 0.7),
-      -5px -5px 0px rgba(0, 255, 0, 0.7),
-      5px 5px 0px rgba(0, 255, 0, 0.7),
-      -7px -7px 0px rgba(0, 0, 255, 0.7),
-      7px 7px 0px rgba(0, 0, 255, 0.7);
-    
-    }
-    50% {
-      text-shadow: none;
-    }
-    100% {
-      text-shadow: 
-      -1px -1px 0px rgba(255, 255, 255, 0.7),
-      1px 1px 0px rgba(255, 255, 255, 0.7),
-      -3px -3px 0px rgba(255, 0, 0, 0.7),
-      3px 3px 0px rgba(255, 0, 0, 0.7),
-      -5px -5px 0px rgba(0, 255, 0, 0.7),
-      5px 5px 0px rgba(0, 255, 0, 0.7),
-      -7px -7px 0px rgba(0, 0, 255, 0.7),
-      7px 7px 0px rgba(0, 0, 255, 0.7);
-    
-    }
-  }
+@keyframes glitch {
+  0% {
+    text-shadow: 
+    -1px -1px 0px rgba(255, 255, 255, 0.7),
+    1px 1px 0px rgba(255, 255, 255, 0.7),
+    -3px -3px 0px rgba(255, 0, 0, 0.7),
+    3px 3px 0px rgba(255, 0, 0, 0.7),
+    -5px -5px 0px rgba(0, 255, 0, 0.7),
+    5px 5px 0px rgba(0, 255, 0, 0.7),
+    -7px -7px 0px rgba(0, 0, 255, 0.7),
+    7px 7px 0px rgba(0, 0, 255, 0.7);
   
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 
+    -1px -1px 0px rgba(255, 255, 255, 0.7),
+    1px 1px 0px rgba(255, 255, 255, 0.7),
+    -3px -3px 0px rgba(255, 0, 0, 0.7),
+    3px 3px 0px rgba(255, 0, 0, 0.7),
+    -5px -5px 0px rgba(0, 255, 0, 0.7),
+    5px 5px 0px rgba(0, 255, 0, 0.7),
+    -7px -7px 0px rgba(0, 0, 255, 0.7),
+    7px 7px 0px rgba(0, 0, 255, 0.7);
+  
+  }
+}
