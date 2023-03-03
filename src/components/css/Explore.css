@@ -1,6 +1,15 @@
 
-body {
+body .explore-page {
     background-color: rgb(18,18,24);
+    height: 100vh;
+}
+
+img {
+  border-radius: 5px;
+  height: 400px;
+  width: 285px;
+  object-fit: cover;
+  margin: 20px 0px;
 }
 
 .explore-vid {
@@ -23,13 +32,19 @@ body {
     z-index: 1;
     color: #ffb9ea;
     padding-top: 6%;
+    font-size: 300%;
   }
 
 .box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1%;
+    margin: 1%;
+  }  
+  .box-text {
+    font-weight: 700;
+    font-size: small;
+    font-size: 300%;
   }
   
   .box > div {
@@ -43,39 +58,39 @@ body {
     width: 100%;
     height: auto;
     border: 2px solid transparent;
-    transition: 0.3s ease-out;
-    opacity: 0.9;
-    border-color: rgba(255, 185, 234, 0.3);
+    transition: 0.3s border-color ease-out;
+    transition: 0.3s transform ease-out;
+    transition: 0.3s opacity ease-out;
+    opacity: 0.8;
+    border-color: rgba(255, 185, 234, 0.1);
+    border-width: 3px;
   }
   
   .box > div p {
     position: absolute; /* set child to absolute position */
-    top: 50%; /* position text at 50% from top */
+    top: 105%; /* position text at 105% from top */
     left: 50%; /* position text at 50% from left */
     transform: translate(-50%, -50%); /* center text */
-    margin: 0;
     padding: 10px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4); /* add semi-transparent background */
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.2); /* add semi-transparent background */
     transition: background-color 0.3s ease-out;
-    font-size: 1.3rem;
     border-radius: 5px;
-    max-width: 30%;
-    min-width: 285px;
+    /* max-width: 20%; */
+    min-width: 400px;
     padding: 8px;
     text-align: center;
-    font-size: xx-large;
   }
   
   .box > div:hover img {
     border-color: rgba(255, 185, 234, 0.8); /* change border color on hover */
     opacity: 1;
+    transform: scale(1.007); /* increase scale on hover */
   }
   
   .box > div:hover p {
     background-color: rgba(0, 0, 0, 0.8); /* darken background color on hover */
   }
-    
   
   .explore-header:hover {
     animation: glitch 0.2s;

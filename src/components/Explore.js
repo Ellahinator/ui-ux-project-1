@@ -4,6 +4,8 @@ import './css/Explore.css'
 import glassbox1 from './img/glassbox1.png'
 import glassbox2 from './img/glassbox2.png'
 import ball1 from './img/ball1.png'
+import ball2 from './img/ball2.png'
+import timerift from './img/timerift.png'
 
 const navStyle = {textDecoration: "none", color: "white", backgroundColor: "transparent", border: "none"};
 
@@ -15,21 +17,21 @@ function Explore() {
         <div className='boxes'>
             <div className='box'>
                 <div>
-                    <Link to="/tbd">
-                        <img src={glassbox1} alt="glassbox 1" />
-                            <p><Link style={navStyle}>Location One</Link></p>
+                    <Link to="/skyasylum">
+                        <img src={glassbox2} alt="sky asylum" />
+                            <p className="box-text"><Link style={navStyle}>SKY ASYLUM</Link></p>
                     </Link>
                 </div>
                 <div>
-                    <Link to="/tbd">
-                        <img src={ball1} alt="ball 1" />
-                            <p><Link style={navStyle}>Location Two</Link></p>
+                    <Link to="/glacia">
+                        <img src={ball2} alt="glacia" />
+                            <p className="box-text"><Link style={navStyle}>GLACIA</Link></p>
                     </Link>                
                 </div>
                 <div>
-                    <Link to="/tbd">
-                        <img src={glassbox2} alt="glassbox 2" />
-                            <p><Link style={navStyle}>Location Three</Link></p>
+                    <Link to="/timerift">
+                        <img src={timerift} alt="timerift" />
+                            <p className="box-text"><Link style={navStyle}>THE TIME RIFT</Link></p>
                     </Link>                
                 </div>
             </div>

@@ -2,6 +2,7 @@ import './App.css';
 
 import Homepage from './components/Homepage';
 import Explore from './components/Explore';
+import Glacia from './components/Glacia';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 
@@ -12,10 +13,9 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
           <Route path="explore" element={<Explore />} />
-          {/* <Route path="lodging" element={<Lodging />} />
-          <Route path="restaurants" element={<Restaurants />} />
-          <Route path="attractions" element={<Attractions />} /> */}
-
+          {/* <Route path="skyasylum" element={<SkyAsylum />} /> */}
+          <Route path="glacia" element={<Glacia />} />
+          {/* <Route path="timerift" element={<TimeRift />} /> */}
 
 
           {/* Using path="*"" means "match anything", so this route
@@ -32,7 +32,7 @@ function Layout() {
   return (
     <div>
       <nav>
-      <Link to="/" style={navStyle}>Home</Link>
+      <Link to="/" style={navStyle}>home</Link>
       </nav>
       <Outlet />
     </div>

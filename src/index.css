@@ -29,3 +29,16 @@ code {
     src: url('./fonts/Nexa/NEXABLACK.otf') format('opentype');
     font-weight: 900;
   }
+
+  @font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/Nexa/NEXAHEAVY.otf') format('opentype');
+    font-weight: 800;
+  }
+
+  /* nexa bold */
+  @font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/Nexa/NEXA-BOLD.otf') format('opentype');
+    font-weight: 700;
+  }

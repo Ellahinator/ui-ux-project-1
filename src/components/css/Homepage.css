@@ -28,14 +28,6 @@
     opacity: 0.9;
 }
 
-img {
-    border-radius: 5px;
-    height: 400px;
-    width: 285px;
-    object-fit: cover;
-    margin: 20px 0px;
-}
-
 /* p {
     margin: 20px;
     background-color: transparent;
@@ -47,15 +39,12 @@ img {
     animation: glitch 0.2s;
 }
 
-.header h1, h3{
-     /* NEXA-BOLD */
+.header h3{
     font-family: "Nexa", sans-serif;
-    font-weight: 900;
-    padding-top: 10px;;  
+    font-weight: 300;
+    margin-top: 10px;;  
     background-color: transparent;
-  }
-
-
+}
   
 @keyframes glitch {
   0% {
