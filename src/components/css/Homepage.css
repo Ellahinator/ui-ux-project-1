@@ -35,7 +35,7 @@
     font-weight: 300;
 } */
 
-.header h1:hover, h3:hover, li:hover, nav:hover{
+.header h1:hover, h3:hover, li:hover{
     animation: glitch 0.2s;
 }
 

@@ -16,23 +16,25 @@ export default function App() {
           {/* <Route path="skyasylum" element={<SkyAsylum />} /> */}
           <Route path="glacia" element={<Glacia />} />
           {/* <Route path="timerift" element={<TimeRift />} /> */}
-
-
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
     </div>
   );
 }
-const navStyle = {textDecoration: "none", color: "white", position: "fixed", top: 10, left: 10};
+const navStyle = {textDecoration: "none", color: "white", top: 10, left: 10};
 function Layout() {
   return (
     <div>
       <nav>
-      <Link to="/" style={navStyle}>home</Link>
+        <ul>
+          <li>
+            <Link to="/" style={navStyle}>home</Link>
+          </li>
+          <li>
+            <Link to="explore" style={navStyle}>explore</Link>
+          </li>
+        </ul>
       </nav>
       <Outlet />
     </div>

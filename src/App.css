@@ -5,28 +5,20 @@
    /* NEXA-BOLD */
   font-family: "Nexa", sans-serif;
   /* font-weight: normal; */
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 nav {
-  position: absolute;
-  padding: 20px;
+  position: relative;
+  padding: 0.4%;
   z-index: 1;
-  background-color: transparent;
+  background-color: rgb(18, 18, 24);
   font-weight: 300;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 li {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  transition: text-shadow 0.3s ease-in-out;
+  display: inline-block;
+  margin: 0 10px;
 }

@@ -1,5 +1,5 @@
 
-body .explore-page {
+body  {
     background-color: rgb(18,18,24);
     height: 100vh;
 }
@@ -13,116 +13,113 @@ img {
 }
 
 .explore-vid {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.3;
-    z-index: -1;
-    filter: saturate(0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: -1;
+  filter: saturate(0.5);
 }
 
 .explore-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Nexa", sans-serif;
-    font-weight: 900;
-    z-index: 1;
-    color: #ffb9ea;
-    padding-top: 6%;
-    font-size: 300%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nexa", sans-serif;
+  font-weight: 900;
+  z-index: 1;
+  color: #ffb9ea;
+  padding-top: 6%;
+  font-size: 300%;
+}
 
 .box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 1%;
-  }  
-  .box-text {
-    font-weight: 700;
-    font-size: small;
-    font-size: 300%;
-  }
-  
-  .box > div {
-    width: 30%;
-    margin: 1%;
-    position: relative; /* set parent to relative position */
-  }
-  
-  .box > div img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border: 2px solid transparent;
-    transition: 0.3s border-color ease-out;
-    transition: 0.3s transform ease-out;
-    transition: 0.3s opacity ease-out;
-    opacity: 0.8;
-    border-color: rgba(255, 185, 234, 0.1);
-    border-width: 3px;
-  }
-  
-  .box > div p {
-    position: absolute; /* set child to absolute position */
-    top: 105%; /* position text at 105% from top */
-    left: 50%; /* position text at 50% from left */
-    transform: translate(-50%, -50%); /* center text */
-    padding: 10px;
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.2); /* add semi-transparent background */
-    transition: background-color 0.3s ease-out;
-    border-radius: 5px;
-    /* max-width: 20%; */
-    min-width: 400px;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  .box > div:hover img {
-    border-color: rgba(255, 185, 234, 0.8); /* change border color on hover */
-    opacity: 1;
-    transform: scale(1.007); /* increase scale on hover */
-  }
-  
-  .box > div:hover p {
-    background-color: rgba(0, 0, 0, 0.8); /* darken background color on hover */
-  }
-  
-  .explore-header:hover {
-    animation: glitch 0.2s;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1%;
+}  
 
-  @keyframes glitch {
-    0% {
-      text-shadow: 
-      -1px -1px 0px rgba(255, 255, 255, 0.7),
-      1px 1px 0px rgba(255, 255, 255, 0.7),
-      -3px -3px 0px rgba(255, 0, 0, 0.7),
-      3px 3px 0px rgba(255, 0, 0, 0.7),
-      -5px -5px 0px rgba(0, 255, 0, 0.7),
-      5px 5px 0px rgba(0, 255, 0, 0.7),
-      -7px -7px 0px rgba(0, 0, 255, 0.7),
-      7px 7px 0px rgba(0, 0, 255, 0.7);
-    
-    }
-    50% {
-      text-shadow: none;
-    }
-    100% {
-      text-shadow: 
-      -1px -1px 0px rgba(255, 255, 255, 0.7),
-      1px 1px 0px rgba(255, 255, 255, 0.7),
-      -3px -3px 0px rgba(255, 0, 0, 0.7),
-      3px 3px 0px rgba(255, 0, 0, 0.7),
-      -5px -5px 0px rgba(0, 255, 0, 0.7),
-      5px 5px 0px rgba(0, 255, 0, 0.7),
-      -7px -7px 0px rgba(0, 0, 255, 0.7),
-      7px 7px 0px rgba(0, 0, 255, 0.7);
-    
-    }
-  }
+.box-text {
+  font-weight: 700;
+  font-size: 300%;
+}
+
+.box > div {
+  width: 30%;
+  margin: 1%;
+  position: relative; /* set parent to relative position */
+}
+
+.box > div img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid transparent;
+  transition: 0.3s border-color ease-out;
+  transition: 0.3s transform ease-out;
+  transition: 0.3s opacity ease-out;
+  opacity: 0.8;
+  border-color: rgba(255, 185, 234, 0.1);
+}
+
+.box > div p {
+  position: absolute; /* set child to absolute position */
+  top: 105%; /* position text at 105% from top */
+  left: 50%; /* position text at 50% from left */
+  transform: translate(-50%, -50%); /* center text */
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.2); /* add semi-transparent background */
+  transition: background-color 0.3s ease-out;
+  border-radius: 5px;
+  max-width: 100%;
+  min-width: 70%;
+  padding: 8px;
+  text-align: center;
+}
+
+.box > div:hover img {
+  border-color: rgba(255, 185, 234, 0.8); /* change border color on hover */
+  opacity: 1;
+  transform: scale(1.007); /* increase scale on hover */
+}
+
+.box > div:hover p {
+  background-color: rgba(0, 0, 0, 0.8); /* darken background color on hover */
+}
+
+.explore-header:hover {
+  animation: glitch 0.2s;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 
+    -1px -1px 0px rgba(255, 255, 255, 0.7),
+    1px 1px 0px rgba(255, 255, 255, 0.7),
+    -3px -3px 0px rgba(255, 0, 0, 0.7),
+    3px 3px 0px rgba(255, 0, 0, 0.7),
+    -5px -5px 0px rgba(0, 255, 0, 0.7),
+    5px 5px 0px rgba(0, 255, 0, 0.7),
+    -7px -7px 0px rgba(0, 0, 255, 0.7),
+    7px 7px 0px rgba(0, 0, 255, 0.7);
   
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 
+    -1px -1px 0px rgba(255, 255, 255, 0.7),
+    1px 1px 0px rgba(255, 255, 255, 0.7),
+    -3px -3px 0px rgba(255, 0, 0, 0.7),
+    3px 3px 0px rgba(255, 0, 0, 0.7),
+    -5px -5px 0px rgba(0, 255, 0, 0.7),
+    5px 5px 0px rgba(0, 255, 0, 0.7),
+    -7px -7px 0px rgba(0, 0, 255, 0.7),
+    7px 7px 0px rgba(0, 0, 255, 0.7);
+  
+  }
+}

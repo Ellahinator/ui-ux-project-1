@@ -7,7 +7,7 @@ import ball1 from './img/ball1.png'
 import ball2 from './img/ball2.png'
 import timerift from './img/timerift.png'
 
-const navStyle = {textDecoration: "none", color: "white", backgroundColor: "transparent", border: "none"};
+const navStyle = {textDecoration: "none", color: "whitesmoke", backgroundColor: "transparent", border: "none"};
 
 function Explore() {
   return (
