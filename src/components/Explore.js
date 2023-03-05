@@ -30,7 +30,7 @@ function Explore() {
                     </Link>                
                 </div>
                 <div>
-                    <Link to="/timerift">
+                    <Link to="/void">
                         <img src={thevoid} alt="void" className='explore-img' />
                             <p className="box-text"><Link style={navStyle}>THE VOID</Link></p>
                     </Link>                

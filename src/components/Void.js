@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './css/Void.css';
-import crystalcave from './img/crystalcave.png';
-import glacia2 from './img/glacia2.png';
+import artgallery from './img/voidart.png';
+import retreat from './img/voidretreat.png';
 import leftarrow from './img/leftarrow.png';
 
 function Void() {
@@ -12,27 +12,17 @@ function Void() {
       <div className='void-content'>
         <div className='void-boxes'>
           <div className='void-box'>
-            <img src={crystalcave} alt="crystal cave" className='void-img'/>
-            <p className='sub-text'>crystal cave</p>
+            <img src={artgallery} alt="void art gallery" className='void-img'/>
+            <p className='sub-text'>art gallery</p>
             <p className='void-text'> 
-                Glacia's crystal cave is a wonderland of natural beauty, sparkling with iridescent mineral 
-                formations that glimmer in the soft light of lanterns. Tucked deep into the snowy mountains, 
-                the cave is a chilly but magical retreat, offering visitors the chance to explore its winding 
-                passages and discover hidden gems. The walls are adorned with glittering crystals that reflect 
-                a rainbow of colors, while underground streams and pools add to the cave's ethereal ambiance. 
-                The crystal cave is a must-see attraction for anyone visiting Glacia, offering a glimpse into 
-                the awe-inspiring wonders of the natural world.
+            This gallery features artwork that explores the theme of ephemerality, showcasing works that are temporary, fleeting, and impermanent. Visitors can experience the beauty and transience of these artworks, and reflect on the impermanence of life itself
             </p>
           </div>
           <div className='void-box'>
-            <img src={glacia2} alt="ephemeral" className='void-img'/>
-            <p className='sub-text'>ephemeral</p>
+            <img src={retreat} alt="retreat" className='void-img'/>
+            <p className='sub-text'>non-existence retreat</p>
             <p className='void-text'>            
-                Ephemeral is a trendy restaurant in Glacia, known for its delicious food and unique atmosphere. 
-                The interior is designed to look like a smokey blue cloud, with dim lighting and modern decor. 
-                Their menu features a variety of international cuisines, including sushi, pasta, and steak. 
-                Ephemeral is a must-visit spot for foodies and those looking for a memorable dining experience.
-            </p>
+            This retreat offers visitors a chance to disconnect from the pressures of daily life and embrace the concept of non-existence. Visitors can practice mindfulness, meditation, and yoga, and explore the natural beauty of the surrounding wilderness.            </p>
           </div>
         </div>
       </div>
