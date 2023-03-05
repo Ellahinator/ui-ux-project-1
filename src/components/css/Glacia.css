@@ -1,5 +1,5 @@
 body .glacia-page {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(138, 187, 255);
     height: 100vh;
 }
 
@@ -11,7 +11,70 @@ body .glacia-page {
     font-family: "Nexa", sans-serif;
     font-weight: 900;
     z-index: 1;
-    padding-top: 6%;
+    padding-top: 3%;
     font-size: 300%;
     color: #20191e;
+}
+
+.glacia-img {
+    border-radius: 5px;
+    height: 560px;
+    width: 399px;
+    object-fit: cover;
+    margin: 20px 0px;
+}
+
+.glacia-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.glacia-text {
+    background-color: lightblue;
+    color: black;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    max-width: 500px;
+    min-width: 399px;
+    margin: 20px 0px;
+    padding: 8px;
+    /* text-align: center; */
+}
+
+.glacia-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.glacia-boxes > div img {
+    border: 3px solid transparent;
+    transition: 0.3s border-color ease-out;
+    transition: 0.3s transform ease-out;
+    transition: 0.3s opacity ease-out;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.glacia-boxes > div:hover img {
+    border-color: rgba(0, 0, 0, 0.8); /* change border color on hover */
+    opacity: 1;
+}
+
+.sub-text {
+
+    transform: translate(0%, -300%); /* center text */
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.6); /* add semi-transparent background */
+    transition: background-color 0.3s ease-out;
+    border-radius: 0px;
+    min-width: 74%;
+    padding: 8px;
+    text-align: center;
+}
+
+.sub-text:hover {
+    
 }

@@ -6,6 +6,7 @@ import glassbox2 from './img/glassbox2.png'
 import ball1 from './img/ball1.png'
 import ball2 from './img/ball2.png'
 import timerift from './img/timerift.png'
+import thevoid from './img/void.png'
 
 const navStyle = {textDecoration: "none", color: "whitesmoke", backgroundColor: "transparent", border: "none"};
 
@@ -18,19 +19,19 @@ function Explore() {
             <div className='box'>
                 <div>
                     <Link to="/skyasylum">
-                        <img src={glassbox2} alt="sky asylum" />
+                        <img src={glassbox2} alt="sky asylum"  className='explore-img'/>
                             <p className="box-text"><Link style={navStyle}>SKY ASYLUM</Link></p>
                     </Link>
                 </div>
                 <div>
                     <Link to="/glacia">
-                        <img src={ball2} alt="glacia" />
+                        <img src={ball2} alt="glacia"  className='explore-img'/>
                             <p className="box-text"><Link style={navStyle}>GLACIA</Link></p>
                     </Link>                
                 </div>
                 <div>
                     <Link to="/timerift">
-                        <img src={timerift} alt="timerift" />
+                        <img src={thevoid} alt="timerift" className='explore-img' />
                             <p className="box-text"><Link style={navStyle}>THE TIME RIFT</Link></p>
                     </Link>                
                 </div>

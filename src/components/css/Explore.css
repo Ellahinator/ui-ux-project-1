@@ -4,7 +4,7 @@ body  {
     height: 100vh;
 }
 
-img {
+.explore-img {
   border-radius: 5px;
   height: 400px;
   width: 285px;
