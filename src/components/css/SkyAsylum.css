@@ -1,10 +1,10 @@
-body .glacia-page {
+body .skyasylum-page {
     background-color: rgb(18, 18, 24);
     background: linear-gradient(to bottom, rgba(4, 20, 31, 0.7) 0%, rgba(0,0,0,0.3) 100%);
     height: 100vh;
 }
 
-.glacia-header {
+.skyasylum-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@ body .glacia-page {
     color: #6fe2ff;
 }
 
-.glacia-img {
+.skyasylum-img {
     /* border-radius: 5px; */
     height: 560px;
     width: 399px;
@@ -25,13 +25,13 @@ body .glacia-page {
     margin: 20px 0px;
 }
 
-.glacia-box {
+.skyasylum-box {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.glacia-text {
+.skyasylum-text {
     background-color: rgb(18, 18, 24);
     color: #ffffff;
     font-size: 1.1rem;
@@ -45,7 +45,7 @@ body .glacia-page {
     line-height: 1.5;
 }
 
-.glacia-boxes {
+.skyasylum-boxes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -53,7 +53,7 @@ body .glacia-page {
     /* flex-wrap: wrap; */
 }
 
-.glacia-boxes > div img {
+.skyasylum-boxes > div img {
     border: 1px solid transparent;
     transition: 0.3s border-color ease-out;
     transition: 0.3s transform ease-out;
@@ -109,15 +109,6 @@ body .glacia-page {
     background-color: #777;
     color:rgb(255, 255, 255)
 }
-  
-.arrow-left > img {
-    height: 20px;
-    margin-right: 8px;
-}
-
-.arrow-left > span {
-    margin-right: 8px;
-}
 
 .arrow-right > img {
     height: 20px;
@@ -127,29 +118,3 @@ body .glacia-page {
 .arrow-right > span {
     margin-left: 10px;
 }
-
-.arrow-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #232323;
-    color: rgb(152, 152, 152);
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-    transition: color 0.3s ease;
-    padding: 8px;
-    position: fixed;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    width: 80px;
-    text-align: left;
-}
-    
-.arrow-left:hover {
-    background-color: #777;
-    color: rgb(255, 255, 255)
-}
-      

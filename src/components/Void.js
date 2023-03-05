@@ -1,21 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './css/Glacia.css';
+import './css/Void.css';
 import crystalcave from './img/crystalcave.png';
 import glacia2 from './img/glacia2.png';
-import rightarrow from './img/rightarrow.png';
 import leftarrow from './img/leftarrow.png';
 
-function Glacia() {
+function Void() {
   return (
-    <div className='glacia-page'>
-      <h1 className='glacia-header'>GLACIA</h1>
-      <div className='glacia-content'>
-        <div className='glacia-boxes'>
-          <div className='glacia-box'>
-            <img src={crystalcave} alt="crystal cave" className='glacia-img'/>
+    <div className='void-page'>
+      <h1 className='void-header'>THE VOID</h1>
+      <div className='void-content'>
+        <div className='void-boxes'>
+          <div className='void-box'>
+            <img src={crystalcave} alt="crystal cave" className='void-img'/>
             <p className='sub-text'>crystal cave</p>
-            <p className='glacia-text'> 
+            <p className='void-text'> 
                 Glacia's crystal cave is a wonderland of natural beauty, sparkling with iridescent mineral 
                 formations that glimmer in the soft light of lanterns. Tucked deep into the snowy mountains, 
                 the cave is a chilly but magical retreat, offering visitors the chance to explore its winding 
@@ -25,10 +24,10 @@ function Glacia() {
                 the awe-inspiring wonders of the natural world.
             </p>
           </div>
-          <div className='glacia-box'>
-            <img src={glacia2} alt="ephemeral" className='glacia-img'/>
+          <div className='void-box'>
+            <img src={glacia2} alt="ephemeral" className='void-img'/>
             <p className='sub-text'>ephemeral</p>
-            <p className='glacia-text'>            
+            <p className='void-text'>            
                 Ephemeral is a trendy restaurant in Glacia, known for its delicious food and unique atmosphere. 
                 The interior is designed to look like a smokey blue cloud, with dim lighting and modern decor. 
                 Their menu features a variety of international cuisines, including sushi, pasta, and steak. 
@@ -38,16 +37,10 @@ function Glacia() {
         </div>
       </div>
       <div className='arrow-box'>
-        <Link to="/void" className='arrow-link'>
-          <div className='arrow-right'>
-            <img src={rightarrow} alt="rightarrow" className='arrow-img'/>
-            <span className='arrow-text'>the void</span>
-          </div>
-        </Link>
-        <Link to="/skyasylum" className='arrow-link'>
+        <Link to="/glacia" className='arrow-link'>
           <div className='arrow-left'>
             <img src={leftarrow} alt="leftarrow" className='arrow-img'/>
-            <span className='arrow-text'>sky asylum</span>
+            <span className='arrow-text'>glacia</span>
           </div>
         </Link>
       </div>
@@ -55,4 +48,4 @@ function Glacia() {
   )
 }
 
-export default Glacia;
+export default Void;

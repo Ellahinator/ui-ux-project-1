@@ -3,6 +3,8 @@ import './App.css';
 import Homepage from './components/Homepage';
 import Explore from './components/Explore';
 import Glacia from './components/Glacia';
+import SkyAsylum from './components/SkyAsylum';
+import Void from './components/Void';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 
@@ -13,9 +15,9 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
           <Route path="explore" element={<Explore />} />
-          {/* <Route path="skyasylum" element={<SkyAsylum />} /> */}
+          <Route path="skyasylum" element={<SkyAsylum />} />
           <Route path="glacia" element={<Glacia />} />
-          {/* <Route path="timerift" element={<TimeRift />} /> */}
+          <Route path="void" element={<Void />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

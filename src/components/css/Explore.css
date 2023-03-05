@@ -45,6 +45,7 @@ body  {
 .box-text {
   font-weight: 700;
   font-size: 300%;
+  background: linear-gradient(to bottom, rgba(37, 22, 37, 0.588) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .box > div {

@@ -9,7 +9,7 @@ function Homepage() {
     <div className="content">
       <video src='/HomePageBG.mp4' autoPlay loop muted className='homepage-vid'/> 
       <div className="header">
-      <h1>welcome to the tbd</h1>
+      <h1>welcome to the time rift</h1>
       <h3> <Link style={navStyle} to = "/explore"> click here to explore</Link></h3>
       </div>
     </div>
