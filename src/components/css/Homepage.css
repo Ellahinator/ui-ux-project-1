@@ -28,13 +28,6 @@
     opacity: 0.9;
 }
 
-/* p {
-    margin: 20px;
-    background-color: transparent;
-    font-family: "Nexa", sans-serif;
-    font-weight: 300;
-} */
-
 .header h1:hover, h3:hover, li:hover{
     animation: glitch 0.2s;
 }

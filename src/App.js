@@ -46,8 +46,7 @@ function Layout() {
 function NoMatch() {
   return (
       <div className='content'>
-        <h2>Congratulations. You win $1,000,000!</h2>
-        <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click here to claim your prize!</a> </p>
+        <h2>this page does not exist</h2>
       </div>
   );
 }

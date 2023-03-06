@@ -16,7 +16,7 @@ function Glacia() {
             <img src={crystalcave} alt="crystal cave" className='glacia-img'/>
             <p className='sub-text'>crystal cave</p>
             <p className='glacia-text'> 
-                Glacia's crystal cave is a wonderland of natural beauty, sparkling with iridescent mineral 
+                Glacia's <span style={{color: '#6fe2ff'}}>crystal cave</span> is a wonderland of natural beauty, sparkling with iridescent mineral 
                 formations that glimmer in the soft light of lanterns. Tucked deep into the snowy mountains, 
                 the cave is a chilly but magical retreat, offering visitors the chance to explore its winding 
                 passages and discover hidden gems. The walls are adorned with glittering crystals that reflect 
@@ -29,7 +29,7 @@ function Glacia() {
             <img src={glacia2} alt="ephemeral" className='glacia-img'/>
             <p className='sub-text'>ephemeral</p>
             <p className='glacia-text'>            
-                Ephemeral is a trendy restaurant in Glacia, known for its delicious food and unique atmosphere. 
+                <span style={{color: '#6fe2ff'}}>Ephemeral</span> is a trendy restaurant in Glacia, known for its delicious food and unique atmosphere. 
                 The interior is designed to look like a smokey blue cloud, with dim lighting and modern decor. 
                 Their menu features a variety of international cuisines, including sushi, pasta, and steak. 
                 Ephemeral is a must-visit spot for foodies and those looking for a memorable dining experience.

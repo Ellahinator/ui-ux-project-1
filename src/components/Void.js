@@ -15,14 +15,19 @@ function Void() {
             <img src={artgallery} alt="void art gallery" className='void-img'/>
             <p className='sub-text'>art gallery</p>
             <p className='void-text'> 
-            This gallery features artwork that explores the theme of ephemerality, showcasing works that are temporary, fleeting, and impermanent. Visitors can experience the beauty and transience of these artworks, and reflect on the impermanence of life itself
+                This <span style={{color: '#c9c9c9'}}>art gallery</span> features artwork that explores the theme of ephemerality, showcasing works that are 
+                temporary, fleeting, and impermanent. Visitors can experience the beauty and transience of these 
+                artworks, and reflect on the impermanence of life itself.
             </p>
           </div>
           <div className='void-box'>
             <img src={retreat} alt="retreat" className='void-img'/>
-            <p className='sub-text'>non-existence retreat</p>
+            <p className='sub-text'>absence retreat</p>
             <p className='void-text'>            
-            This retreat offers visitors a chance to disconnect from the pressures of daily life and embrace the concept of non-existence. Visitors can practice mindfulness, meditation, and yoga, and explore the natural beauty of the surrounding wilderness.            </p>
+                <span style={{color: '#c9c9c9'}}>Absence Retreat</span> offers visitors a chance to disconnect from the pressures of daily life and embrace 
+                the concept of non-existence. Visitors can practice mindfulness, meditation, and yoga, and explore 
+                the natural beauty of the surrounding wilderness.            
+            </p>
           </div>
         </div>
       </div>
