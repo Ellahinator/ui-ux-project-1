@@ -12,8 +12,33 @@ code {
     monospace;
 }
 
-@font-face {
-  font-family: "SpongeboyRegular";
-  src: local("SpongeboyRegular"),
-   url("./fonts/SpongeboyRegular.otf") format("truetype");
+  @font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/Nexa/NEXA-LIGHT.otf') format('opentype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/Nexa/NEXAREGULAR.otf') format('opentype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/Nexa/NEXABLACK.otf') format('opentype');
+    font-weight: 900;
+  }
+
+  @font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/Nexa/NEXAHEAVY.otf') format('opentype');
+    font-weight: 800;
+  }
+
+  /* nexa bold */
+  @font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/Nexa/NEXA-BOLD.otf') format('opentype');
+    font-weight: 700;
   }

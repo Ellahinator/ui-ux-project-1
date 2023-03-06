@@ -1,24 +1,20 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Nexa", sans-serif;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: lightblue;
+nav {
+  position: relative;
+  padding: 0.4%;
+  z-index: 1;
+  background-color: rgb(18, 18, 24);
+  font-weight: 300;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 li {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-}
-
-li:hover {
-  background-color: yellow;
+  display: inline-block;
+  margin: 0 10px;
 }
